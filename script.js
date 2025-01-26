@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Creates button to remove a task
     const removeBtn = document.createElement("button");
+    removeBtn.textContent = "Remove";
     removeBtn.classList.add("remove-btn");
 
     // Adds an event incase of removing the task
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       li.remove();
     });
 
-    li.append(removeBtn);
+    li.appendChild(removeBtn);
 
     // Appends the created task to the list
     taskList.append(li);
